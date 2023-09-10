@@ -36,11 +36,15 @@
         </div>
       </div>
       <!-- Add buttons here -->
-      <div class="text-center mt-4">
-        <button class="btn btn-primary mr-2" onclick="changeText('Information 1', 'info-1')">Show Information 1</button>
-        <button class="btn btn-primary" onclick="changeText('Information 2', 'info-2')">Show Information 2</button>
-      </div>
-    </div>
+<div class="row mt-4">
+  <div class="col-md-2 text-center">
+    <button class="btn btn-primary mb-2" onclick="changeText('Information 1', 'info-1')">Show Information 1</button>
+    <button class="btn btn-primary" onclick="changeText('Information 2', 'info-2')">Show Information 2</button>
+  </div>
+  <div class="col-md-10">
+    <p id="info" class="lead">Here, you can find information about various topics.</p>
+  </div>
+</div>
     <!-- Add JavaScript here -->
     <script>
       function changeText(info, className) {
