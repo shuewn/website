@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Information Website</title>
+    <!-- Add Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Add custom CSS -->
+    <style>
+      body {
+        background-color: #f8f9fa;
+        transition: background-color 0.5s ease;
+      }
+      .info-1 {
+        background-color: #007bff;
+        color: white;
+      }
+      .info-2 {
+        background-color: #6c757d;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container mt-4">
+      <h1 class="text-center">Welcome to my website!</h1>
+      <p id="info" class="lead text-center">Here, you can find information about various topics.</p>
+      <!-- Add image section here -->
+      <div class="row mt-4">
+        <div class="col-md-6">
+          <img src="image1.jpg" class="img-thumbnail">
+          <p class="mt-2">This is some information about the first image.</p>
+        </div>
+        <div class="col-md-6">
+          <img src="image2.jpg" class="img-thumbnail">
+          <p class="mt-2">This is some information about the second image.</p>
+        </div>
+      </div>
+      <!-- Add buttons here -->
+      <div class="text-center mt-4">
+        <button class="btn btn-primary mr-2" onclick="changeText('Information 1', 'info-1')">Show Information 1</button>
+        <button class="btn btn-primary" onclick="changeText('Information 2', 'info-2')">Show Information 2</button>
+      </div>
+    </div>
+    <!-- Add JavaScript here -->
+    <script>
+      function changeText(info, className) {
+        document.getElementById('info').innerText = info;
+        document.body.className = className;
+      }
+    </script>
+    <!-- Add Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </body>
+</html>   
